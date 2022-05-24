@@ -15,6 +15,9 @@ KPE_Vec2 operator/(KPE_Vec2 const& v1, double const& v2) {
 KPE_Vec2 operator*(KPE_Vec2 const& v1, KPE_Vec2 const& v2) {
     return KPE_Vec2{v1.x * v2.x, v1.y * v2.y};
 }
+KPE_Vec2 operator*(double const& v1, KPE_Vec2 const& v2) {
+    return KPE_Vec2{v1 * v2.x, v1 * v2.y};
+}
 KPE_Vec2 operator*(KPE_Vec2 const& v1, double const& v2) {
     return KPE_Vec2{v1.x * v2,  v1.y * v2};
 }

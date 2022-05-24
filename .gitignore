@@ -1,0 +1,6 @@
+include/raylib.h
+include/raymath.h
+libs/libraylib.a
+.vscode/settings.json
+main.exe
+comp.bat
