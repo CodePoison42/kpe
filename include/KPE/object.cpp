@@ -39,18 +39,24 @@ void object::update_position(float dt) {
 void object::accelerate(KPE_Vec2 accel) {
     acceleration = acceleration + accel;
 }
+
+
 double object::get_x() {
     return current_pos.x;
 }
 double object::get_y() {
     return current_pos.y;
 }
+
+
 void object::set_x(double x) {
     current_pos.x = x;
 }
 void object::set_y(double y) {
     current_pos.y = y;
 }
+
+
 void object::set_pos(KPE_Vec2 pos) {
     current_pos = pos;
 }

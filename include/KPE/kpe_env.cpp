@@ -10,7 +10,7 @@ object *kpe_env::create_object(KPE_Vec2 pos) {
 }
 
 void kpe_env::update_env(float dt) {
-    const float sub_updates = 3;
+    const float sub_updates = 5; // TODO: EXPOSE TO DEV
     const float sub_dt = dt / sub_updates;
     for (int i = sub_updates; i > 0; i--) {
         apply_grav();
