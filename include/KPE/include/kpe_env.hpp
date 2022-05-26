@@ -11,6 +11,7 @@ class kpe_env
 protected:
     KPE_Vec2 gravity = {0.0, 1000.0};
     float width, height;
+    int env_id = 0;
 public:
     std::vector<aabb*> aabbs;
     std::vector<circle*> objects;
@@ -23,6 +24,7 @@ public:
     
     void apply_grav();
     void restrain_env();
+    void update_aabb();
     void solve_collisions();
     void update_positions(float dt);
 };

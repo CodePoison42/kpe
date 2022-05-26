@@ -18,9 +18,9 @@ int main(void) {
 
         t += GetFrameTime() * 50.0f;
         h += GetFrameTime() * 40.0f;
-        if ( t > 1 ) {
+        if ( t > 1.0f ) {
             circle* o = env->create_circle({(double)SW/2 + (int(h * 50) % 100), SH/2 - 300}, 5);
-            o->accelerate({0.0, 90000.0});
+            o->accelerate({0.0, 60000.0});
             Color col = ColorFromHSV(int(h * 2) % 350, 1.0f, 1.0f);
             o->r = col.r;
             o->g = col.g;
